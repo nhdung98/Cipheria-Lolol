@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="applystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Job Application Form</h2>
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+            <label for="jobRef">Job Reference Number:</label>
+            <input type="text" id="jobRef" name="jobRef" pattern="[A-Za-z0-9]{5}" required>
+            
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" value="" pattern="^[a-zA-Z]+$" maxlength="15" title="alphabet only" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" value="" pattern="^[a-zA-Z]+$" maxlength="15" title="alphabet only" required>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other" required>
+                <label for="other">Other</label>
+            </fieldset>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="suburb">Suburb/Town:</label>
+            <input type="text" id="suburb" name="suburb" required>
+            
+            <label for="state">State:</label>
+            <select id="state" name="state" required>
+                <option value="">Select a state</option>
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="SA">SA</option>
+                <option value="WA">WA</option>
+                <option value="TAS">TAS</option>
+                <option value="NT">NT</option>
+                <option value="ACT">ACT</option>
+            </select>
+            
+            <label for="postcode">Postcode:</label>
+            <input type="text" id="postcode" name="postcode" pattern="\d{4}" title="4 number only"required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" title="abcd.@gmail.com" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="\d{10}" required>
+            
+            <fieldset>
+                <legend>Skills:</legend>
+                <input type="checkbox" id="html" name="skills" value="HTML" checked>
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="skills" value="CSS">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="skills" value="JavaScript">
+                <label for="js">JavaScript</label>
+                <input type="checkbox" id="python" name="skills" value="Python">
+                <label for="python">Python</label>
+                <input type="checkbox" id="other" name="skills" value="Other">
+                <label for="other">Other Skills...</label>
+            </fieldset>
+            
+            <label for="otherSkills">If other, please specify:</label>
+            <textarea id="otherSkills" name="otherSkills" rows="4"></textarea>
+            
+            <button type="submit">Submit Application</button>
+        </form>
+        <a href="index.html" class="back-to-home">← Back to Home</a>
+    </div>
+</body>
+</html>

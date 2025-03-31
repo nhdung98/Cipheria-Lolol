@@ -1,0 +1,97 @@
+body {
+    background: url('pngtree-abstract-black-crystal-background-with-faceted-texture-image_13789357.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 70px auto;
+    background: black;
+    padding: 70px 80px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+    text-align: left;
+}
+
+h1, h2, h3, legend {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    color: white;
+    line-height: 1.6;
+}
+
+ul li {
+    margin: 10px 0;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateY(-3px);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    max-width: 1200px;
+}
+
+fieldset {
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 40 40px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    text-align: left;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.back-to-home {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.back-to-home:hover {
+    text-decoration: underline;
+    color: rgb(207, 208, 208);
+}
+.back-to-home {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+    position: relative;
+    opacity: 1;
+}
+
+.back-to-home:hover {
+    text-decoration: underline;
+    color: white;
+    transform: translateY(-5px); /* Slides right on hover */
+}
+
+
+

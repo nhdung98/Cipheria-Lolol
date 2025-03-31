@@ -1,0 +1,186 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Dark Background */
+body {
+    background: url('pngtree-abstract-black-crystal-background-with-faceted-texture-image_13789357.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.about-us {
+    width: 100%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark */
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 15px white;
+}
+
+/* Section Titles */
+.about-us h2, .about-us h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Definition List */
+.info-list {
+    background: black;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+.info-list dt {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.info-list dd {
+    margin-left: 15px;
+    color: white;
+}
+
+/* Members Section */
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Member Card */
+.member {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px white;
+}
+
+/* Member Image */
+.member img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Member Details */
+.member figcaption {
+    margin-top: 10px;
+}
+
+.member strong {
+    display: block;
+    font-size: 16px;
+    color: white;
+}
+
+.member p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: lightgray;
+}
+
+/* Group Photo */
+.group-photo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.group-photo img {
+    width: 60%;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+}
+
+/* Timetable */
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.timetable caption {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.timetable th, .timetable td {
+    border: 2px solid white;
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+
+.timetable th {
+    background: black;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.contact a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.back-to-home:hover {
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+}
+.back-to-home {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+    position: relative;
+    opacity: 1;
+}
+
+.back-to-home:hover {
+    text-decoration: underline;
+    color: white;
+    transform: translateY(-5px); /* Slides right on hover */
+}
+

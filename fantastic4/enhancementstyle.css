@@ -1,0 +1,102 @@
+body {
+    background: url('pngtree-abstract-black-crystal-background-with-faceted-texture-image_13789357.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 2px solid white;
+    padding: 15px;
+}
+
+.box:hover {
+    transform: translateY(-3px);
+}
+
+.number {
+    background: white;
+    color: black;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 50px;
+    border-radius: 5px 0 0 5px;
+}
+
+.content {
+    padding-left: 15px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.back-to-home {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.back-to-home:hover {
+    text-decoration: underline;
+    color: cyan;
+}
+.back-to-home {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+    position: relative;
+    opacity: 0.7;
+}
+
+.back-to-home:hover {
+    text-decoration: underline;
+    color: white;
+    transform: translateY(-5px); /* Slides right on hover */
+}
+

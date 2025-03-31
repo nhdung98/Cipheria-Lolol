@@ -1,0 +1,103 @@
+body {
+    background: url('pngtree-abstract-black-crystal-background-with-faceted-texture-image_13789357.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.login-container {
+width: 300px;
+margin: 100px auto;
+padding: 20px;
+background: black;
+border-radius: 20px;
+box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+text-align: center;
+}
+
+.login-container h2 {
+font-size: 24px;
+color: white;
+}
+
+.login-container form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.login-container label {
+text-align: left;
+color: white;
+font-weight: bold;
+}
+
+.login-container input {
+padding: 10px;
+border: 2px solid white;
+border-radius: 10px;
+background: black;
+color: white;
+}
+
+.login-container button {
+background: black;
+border: 2px solid white;
+color: white;
+padding: 10px;
+cursor: pointer;
+border-radius: 50px;
+font-size: 14px;
+font-weight: bold;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container button:hover {
+transform: translateY(-3px);
+box-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
+}
+
+.forgot-password {
+    color: white;
+    text-decoration: underline;
+    font-size: 13px; /* Adjust this value for smaller text */
+}
+
+.login-link {
+    color: white;
+    text-decoration: underline;
+}
+
+
+.back-link {
+display: block;
+margin-top: 10px;
+color: white;
+text-decoration: none;
+font-size: 14px;
+}
+
+.back-link:hover {
+text-decoration: underline;
+}
+
+.back-link {
+display: block;
+margin-top: 20px;
+color: white;
+text-decoration: none;
+font-size: 18px;
+padding: 10px 15px;
+transition: transform 0.3s ease, color 0.3s ease;
+position: relative;
+}
+
+.back-link:hover {
+transform: translateY(-3px);
+color: white;
+}
+
+
+

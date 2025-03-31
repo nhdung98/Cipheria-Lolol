@@ -1,0 +1,197 @@
+body {
+    background: url('pngtree-abstract-black-crystal-background-with-faceted-texture-image_13789357.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.jobs-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+.job-listing {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.job-listing:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+}
+
+.job-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.job-description {
+    color: white;
+}
+
+.job-button {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-top: 10px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.job-button:hover {
+    background: white;
+    color: black;
+    transform: translateY(-3px);
+}
+
+/* Job Details Section (Hidden by default) */
+.job-details {
+    display: none;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+    text-align: left
+}
+
+/* Use :target to show job details when link is clicked */
+#job1:target, #job2:target, #job3:target {
+    display: block;
+}
+
+/* Close button */
+.close-button {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 10px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.close-button:hover {
+    background: white;
+    color: red;
+    transform: translateY(-3px);
+}
+
+.back-to-home {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.back-to-home:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    transform: translateY(-3px);
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 18px;
+    color: rgb(255, 254, 254);
+    margin: 10px 0;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+.signup-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 10px;
+}
+
+.signup-btn:hover {
+    background: rgb(0, 0, 0);
+    transform: translateY(-3px);
+}
+.main-content {
+    margin-left: 30%;
+    padding: 20px;
+    text-align: left;
+    flex: 1;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+nav ul li {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: translateY(-3px);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
