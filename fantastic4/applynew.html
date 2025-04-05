@@ -55,7 +55,7 @@
             </select>
             
             <label for="postcode">Postcode:</label>
-            <input type="text" id="postcode" name="postcode" pattern="\d{4}" title="4 number only"required>
+            <input type="text" id="postcode" name="postcode" pattern="\d{4}" title="4 number only" required>
             
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" title="abcd.@gmail.com" required>
@@ -65,15 +65,15 @@
             
             <fieldset>
                 <legend>Skills:</legend>
-                <input type="checkbox" id="html" name="skills" value="HTML" checked>
+                <input type="checkbox" id="html" name="skills[]" value="HTML" checked>
                 <label for="html">HTML</label>
-                <input type="checkbox" id="css" name="skills" value="CSS">
+                <input type="checkbox" id="css" name="skills[]" value="CSS">
                 <label for="css">CSS</label>
-                <input type="checkbox" id="js" name="skills" value="JavaScript">
+                <input type="checkbox" id="js" name="skills[]" value="JavaScript">
                 <label for="js">JavaScript</label>
-                <input type="checkbox" id="python" name="skills" value="Python">
+                <input type="checkbox" id="python" name="skills[]" value="Python">
                 <label for="python">Python</label>
-                <input type="checkbox" id="other" name="skills" value="Other">
+                <input type="checkbox" id="other" name="skills[]" value="Other">
                 <label for="other">Other Skills...</label>
             </fieldset>
             
