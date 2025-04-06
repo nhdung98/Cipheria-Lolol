@@ -49,20 +49,30 @@ function showResults($result) {
         <h3>1. List All EOIs</h3>
         <button name="action" value="list_all">List All</button>
 
-        <h3>2. Search by Job Reference</h3>
+        <h3>2. Sort EOIs by:</h3>
+        <select name="sortField">
+            <option value="EOInumber">EOI Number</option>
+            <option value="firstName">First Name</option>
+            <option value="lastName">Last Name</option>
+            <option value="jobRef">Job Reference</option>
+            <option value="status">Status</option>
+        </select>
+        <button name="action" value="list_sorted">Sort</button>
+
+        <h3>3. Search by Job Reference</h3>
         <input type="text" name="jobRef" placeholder="Enter Job Reference">
         <button name="action" value="search_jobref">Search</button>
 
-        <h3>3. Search by Applicant Name</h3>
+        <h3>4. Search by Applicant Name</h3>
         <input type="text" name="firstName" placeholder="First Name">
         <input type="text" name="lastName" placeholder="Last Name">
         <button name="action" value="search_name">Search</button>
 
-        <h3>4. Delete EOIs by Job Reference</h3>
+        <h3>5. Delete EOIs by Job Reference</h3>
         <input type="text" name="delete_jobRef" placeholder="Enter Job Ref to Delete">
         <button name="action" value="delete_jobref" onclick="return confirm('Are you sure?')">Delete</button>
 
-        <h3>5. Change EOI Status</h3>
+        <h3>6. Change EOI Status</h3>
         <input type="number" name="eoiNumber" placeholder="EOI Number">
         <select name="newStatus">
             <option value="">Select Status</option>
@@ -84,9 +94,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $result = mysqli_query($conn, $query);
         showResults($result);
 
+    } elseif ($action == "list_sorted") {
+        $allowedFields = ['EOInumber', 'firstName', 'lastName', 'jobRef', 'status'];
+        $sortField = $_POST['sortField'];
+        if (in_array($sortField, $allowedFields)) {
+            $query = "SELECT * FROM eoi ORDER BY $sortField";
+            $result = mysqli_query($conn, $query);
+            showResults($result);
+        } else {
+            echo "<p style='color:red;'>Invalid sort option.</p>";
+        }
+
     } elseif ($action == "search_jobref") {
-        $jobRef = $_POST['jobRef'] ?? '';
-        $jobRef = trim($jobRef);
+        $jobRef = trim($_POST['jobRef'] ?? '');
         $query = "SELECT * FROM eoi WHERE jobRef='$jobRef'";
         $result = mysqli_query($conn, $query);
         showResults($result);
