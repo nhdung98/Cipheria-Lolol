@@ -26,7 +26,7 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="jobs.php">Jobs</a></li>
                     <li><a href="applynew.html">Apply</a></li>
-                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="enhancement.html">Enhancements</a></li>
                 </ul>
             </nav>
