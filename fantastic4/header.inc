@@ -15,7 +15,7 @@
             <li><a href="jobs.php">Job Listings</a></li>
             <li><a href="applynew.html">Apply for a Job</a></li>
             <li><a href="aboutus.php">About Us</a></li>
-            <li><a href="enhancement.php">Enhancements</a></li>
+            <li><a href="enhancement.html">Enhancements</a></li>
         </ul>
     </div>
 
@@ -26,8 +26,8 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="jobs.php">Jobs</a></li>
                     <li><a href="applynew.html">Apply</a></li>
-                    <li><a href="aboutus.php">About</a></li>
-                    <li><a href="enhancement.php">Enhancements</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="enhancement.html">Enhancements</a></li>
                 </ul>
             </nav>
             <div class="auth-buttons">
